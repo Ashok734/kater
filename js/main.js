@@ -163,7 +163,31 @@ $(document).ready(function () {
          
          });
        });
-
+ // for sm size
+$(document).ready(function () {
+         $("#fromsm").datepicker({
+         dateFormate:'dd/mm/yy',
+         
+         });
+       });
+$(document).ready(function () {
+         $("#tosm").datepicker({
+         dateFormate:'dd/mm/yy',
+         
+         });
+       });
+$(document).ready(function () {
+         $("#frommsm").datepicker({
+         dateFormate:'dd/mm/yy',
+         
+         });
+       });
+$(document).ready(function () {
+         $("#toosm").datepicker({
+         dateFormate:'dd/mm/yy',
+         
+         });
+       });
 
 
 // scrolling buttom
@@ -389,14 +413,15 @@ $(function() { // document ready
         var stickyHeight = $('#sticky-map').height();
 
         $(window).scroll(function() { // scroll event
-            var limit = $('#footer-wrapper').offset().top - stickyHeight - 20;
+            var limit = $('#footer-wrapper').offset().top - stickyHeight - 0;
 
             var windowTop = $(window).scrollTop(); // returns number
 
             if (stickyTop < windowTop) {
                 el.css({
                     position: 'fixed',
-                    top: 0
+                    top: 60
+
                 });
             } else {
                 el.css('position', 'static');
@@ -418,7 +443,7 @@ $('.see-img').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-     navText : ["See Pictures"],
+     navText : ["See Pictures >>"],
     autoplay:false,
     // animateIn: 'fadeIn',
     // animateOut: 'fadeOut',
@@ -443,14 +468,15 @@ $(function() { // document ready
         var stickyHeight = $('.chart-purchase').height();
 
         $(window).scroll(function() { // scroll event
-            var limit = $('#here-few').offset().top - stickyHeight - 80;
+            var limit = $('#here-few').offset().top - stickyHeight - 50;
 
             var windowTop = $(window).scrollTop(); // returns number
 
             if (stickyTop < windowTop) {
                 el.css({
                     position: 'fixed',
-                    top: 20
+                    top: 60
+                   
                 });
             } else {
                 el.css('position', 'static');
@@ -465,3 +491,12 @@ $(function() { // document ready
         });
     }
 });
+ // pophover
+ $(function () {
+  $('[data-toggle="popover"]').popover();
+});
+
+
+ // SEARCH  FILTER
+
+ 

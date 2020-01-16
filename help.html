@@ -78,13 +78,13 @@
              <div id="login-wrapper">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-8 col-md-6 col-lg-8">
                     <div class="help">
                       <h3><span>Hi</span> there,</h3>
                       <h3><span>How can we help you?</span></h3>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-md-6 col-lg-4">
                     <div class="search">
                       <form>
                         <div class="form-group input-group">
@@ -105,7 +105,7 @@
              <div id="help-boat-wraper">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-8 col-md-6 col-lg-8">
                     <div class="help-boat">
                       <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
@@ -290,7 +290,7 @@
 </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-md-6 col-lg-4">
                     <div class="card">
                     <p><b>Toll Free:</b> <a href="tel:+44 7478529788">+44 7478529788 </a> <br>
                      <b> Mon to Friday</b> (9:00-20:00)GMT+0</p>
@@ -298,7 +298,417 @@
                      <div class="card">
                     <h6>Would you need an assistance ?</h6>
                     <p>Fill out a short inquiry form. This is the best way we can understand your need; clear and precise. One of our consultant/support will then be right back with the best options to help make your holiday with the perfect chartering experience or the best purchase deal.</p>
-                    <button type="button" class="btn btn-primary">Make an Inquiry</button>
+                   <!--  <button type="button" class="btn btn-primary">Make an Inquiry</button> -->
+                   <!-- modal -->
+                   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+ Make an Inquiry
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 50px;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="enquery-form">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Basic Details</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link p1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Personal Info</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link p1" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Submission</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="basic-detail-wrap">
+      <p>Either you are inquiring for Charter or Purchase, you will be doing a Charter or a Trial Charter in each case. Enter the fields as precisely as possible so we can assist you well in finding you the best value.</p>
+      <form>
+        <div class="form-row">
+                  <div class="form-group col-md-12"> 
+                   <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-map-marker-alt"></i>
+                          </div>
+                        </div>
+                        <input type="text" class="form-control" id="q_city" name ="location" placeholder="Enter your location.." required>
+                      </div>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="from" placeholder="From" style="padding-left: 10px;">
+                      </div>
+                        </div> <!-- col -->
+                         <div class="form-group col-md-6"> 
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
+                        </div>
+                       <input type="text" class="form-control" id="to" placeholder="to" style="padding-left: 10px;">
+                      </div>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-12"> 
+                   <label>How Long would you like to take it for Charter or Trial Charter ?</label>
+                        </div> <!-- col -->
+                </div> <!-- form row -->
+                 <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Enter below for chartering
+  </label>
+</div>
+                   <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-sun"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="day" placeholder="Eg: 2 Days" style="padding-left: 10px;">
+                      </div>
+                        </div> <!-- col -->
+                         <div class="form-group col-md-6"> 
+                          <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Enter below for purchasing
+  </label>
+</div>
+                   <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-sun"></i></div>
+                        </div>
+                       <input type="text" class="form-control" id="day" placeholder="Eg: 2 Days" style="padding-left: 10px;">
+                      </div>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                 <div class="form-row">
+                  <div class="form-group col-md-12"> 
+                   <label>Select your preferred type below. You can select multiple of it.</label>
+                        </div> <!-- col -->
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Watercrafts
+  </label>
+</div>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Sailing Boat
+  </label>
+</div>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Motor Boat
+  </label>
+</div>
+                        </div> <!-- col -->
+                </div> <!-- form row -->
+                 <div class="form-row">
+                  <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Houseboat
+  </label>
+</div>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Catamaran
+  </label>
+</div>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Freighter
+  </label>
+</div>
+                        </div> <!-- col -->
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Jetski
+  </label>
+</div>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Speedboat
+  </label>
+</div>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-4"> 
+                  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Luxury Yacht
+  </label>
+</div>
+                        </div> <!-- col -->
+                </div> <!-- form row -->
+
+      </form>
+       <button type="button" class="btn btn-primary">Next <i class="fas fa-angle-double-right"></i></button>
+  
+  </div>
+</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+     <div class="basic-detail-wrap">
+      <p>Either you are inquiring for Charter or Purchase, you will be doing a Charter or a Trial Charter in each case. Enter the fields as precisely as possible so we can assist you well in finding you the best value.</p>
+      <form>
+        <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="far fa-user"></i>
+                          </div>
+                        </div>
+                        <input type="text" class="form-control" id="q_city" name ="Firstname" placeholder="First Name" required>
+                      </div>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-6"> 
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="far fa-user"></i>
+                          </div>
+                        </div>
+                        <input type="text" class="form-control" id="q_city" name ="lastName" placeholder="Last Name" required>
+                      </div>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-city"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="q_city" name ="location" placeholder="City" required>
+                      </div>
+                        </div> <!-- col -->
+                         <div class="form-group col-md-6"> 
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+                        </div>
+                      <select class="form-control" id="exampleFormControlSelect1">
+              <option>Nepal</option>
+              <option>India</option>
+              <option>China</option>
+              <option>Japan</option>
+              <option>Dubai</option>
+            </select>
+                      </div>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+  
+                 <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="day" placeholder="Enter Email" style="padding-left: 10px;">
+                      </div>
+                        </div> <!-- col -->
+                         <div class="form-group col-md-6"> 
+            
+                   <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>
+                        </div>
+                       <input type="text" class="form-control" id="day" placeholder="Phone no." style="padding-left: 10px;">
+                      </div>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                 <div class="form-row">
+                  <div class="form-group col-md-12"> 
+                    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    I would like to receive the estimate via email
+  </label>
+</div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   I would like to create my account on KaterBlue
+  </label>
+</div>
+                        </div> <!-- col -->
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div> <!-- col -->
+                        <div class="form-group col-md-6"> 
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Confirm Password">
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+              
+      </form>
+      <button type="button" class="btn btn-primary"><i class="fas fa-angle-double-left"></i> Previous </button>
+               <button type="button" class="btn btn-primary">Next <i class="fas fa-angle-double-right"></i></button>
+  </div>
+  </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <div class="basic-detail-wrap">
+      <p>Either you are inquiring for Charter or Purchase, you will be doing a Charter or a Trial Charter in each case. Enter the fields as precisely as possible so we can assist you well in finding you the best value.</p>
+      <form>
+        <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                  <label for="exampleFormControlSelect1">
+With or without captain?</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>With captain</option>
+      <option>Without captain</option>
+      <option>With or Without</option>
+     
+    </select>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-6"> 
+                   <label for="exampleFormControlSelect1">
+Professional or Private?</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                    <label for="inputEmail4">Max.Capacity</label>
+      <input type="address" class="form-control" id="inputAddress" placeholder="">
+                        </div> <!-- col -->
+                         <div class="form-group col-md-6"> 
+                   <label for="inputEmail4">No. of Cabins</label>
+      <input type="address" class="form-control" id="inputAddress" placeholder="">
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+  
+                 <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <label for="inputEmail4">No. of Berth</label>
+      <input type="address" class="form-control" id="inputAddress" placeholder="">
+                        </div> <!-- col -->
+                         <div class="form-group col-md-6"> 
+            <label for="inputEmail4">Manufacturer</label>
+      <input type="address" class="form-control" id="inputAddress" placeholder="">
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                 <div class="form-row">
+                  <div class="form-group col-md-12"> 
+                    <label>Additional info if Inquiring for Purchase:</label>
+                        </div> <!-- col -->
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <label for="exampleFormControlSelect1">
+Operation</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>I am a Skipper/Captain myself</option>
+      <option>The Skipper/Captain is available</option>
+      <option>The skipper/captain is not available</option>
+      <option>other</option>
+     
+    </select>
+                        </div> <!-- col -->
+                        <div class="form-group col-md-6"> 
+                  <label for="exampleFormControlSelect1">
+Condition</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Operational</option>
+      <option>Need few repairing</option>
+      <option>Needs few spare part replacement</option>
+       <option>Needs total restoration</option>
+      <option>other</option>
+     
+    </select>
+                        </div> <!-- col -->
+                        
+                </div> <!-- form row -->
+                 <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                   <label for="exampleFormControlSelect1">
+Year of First Registration</label>
+     <input class="form-control" min="2000" name="inquiry[submission][year_of_first_registration]" type="number" placeholder="YYYY">
+                        </div> <!-- col -->  
+                </div> <!-- form row -->
+              <hr>
+              <div class="form-row">
+                  <div class="form-group col-md-6"> 
+                    <label>Your total budget</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-dollar-sign"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="day" placeholder="$" style="padding-left: 10px;">
+                      </div>
+                        </div> <!-- col -->  
+                </div> <!-- form row -->
+                <div class="form-row">
+                  <div class="form-group col-md-12"> 
+                    <label>Additional Notes(optional)</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 100px;"></textarea>
+                        </div> <!-- col -->  
+                </div> <!-- form row -->
+      </form>
+
+      <button type="button" class="btn btn-primary"><i class="fas fa-angle-double-left"></i> Previous </button>
+               <button type="button" class="btn btn-primary">Submit</button>
+  </div>
+  </div>
+</div>
+</div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+                   <!-- end modal -->
                     </div>
                     <div class="card">
                     <p>Would you rather like this to be <br>straight forward ?</p>

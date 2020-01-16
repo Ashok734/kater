@@ -129,26 +129,27 @@
                       </div>
                       <div class="search-tabs-wrap">
                         <div class="row">
-                          <div class="col-md-6 col-sm-6 col-xs-6">
+                          <div class="col-md-4 col-sm-6 col-xs-6">
                         <h6>Filter based on the purpose :</h6>
                       </div>
-                      <div class="col-md-6 col-sm-6 col-xs-6">
+                      <div class="col-md-8 col-sm-6 col-xs-6">
                         <h6 class="clear-flter">Clear Filter</h6>
                       </div>
                       </div>
                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Private Charter</a>
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Charter a boat</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link nn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Shared Charter</a>
+    <a class="nav-link nn" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Join a boat</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link nn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Purchase boat</a>
+    <a class="nav-link nn" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Buy a boat</a>
   </li>
    <li class="nav-item">
     <a class="nav-link nnn" id="pills-contact-tab" data-toggle="pill" href="#pills-filter" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fas fa-chevron-down"></i> </a>
   </li>
+  
 </ul>
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -505,7 +506,12 @@
                         <form>
                            <div class="form-row">
                            <div class="form-group col-md-4">
-                             <input type="text" class="form-control" id="inputModel" placeholder="Model">
+                              <select id="inputState" class="form-control" style="cursor: pointer;">
+                            <option selected> Owner Type</option>
+                            <option>Professionals</option>
+                            <option>Private</option>
+                            <option>Professionals or Private</option>
+                          </select>
                             </div>
                            <div class="form-group col-md-4">
                              <input type="number" class="form-control" id="inputModel" placeholder="Cabin Min, Berths:">
@@ -521,7 +527,7 @@
                         <form>
                            <div class="form-row">
                             <div class="form-group col-md-4">
-                             <input type="text" class="form-control" id="inputModel" placeholder="Max. Price">
+                             <input type="number" class="form-control" id="inputModel" placeholder="Max. Price">
                             </div>
                            <div class="form-group col-md-4">
                               <select id="inputState" class="form-control" style="cursor: pointer;">
@@ -1397,7 +1403,7 @@
   <div class="tab-pane fade" id="pills-filter" role="tabpanel" aria-labelledby="pills-contact-tab">
    <div class="filter-wrap">
                         <form>
-                          <h6>Purchase</h6>
+                          <h6>Private Charter</h6>
                            <div class="form-row">
                             <div class="form-group col-md-6">
                               <input type="text" class="form-control" id="from" placeholder="From" style="padding-left: 15px;">
@@ -1416,13 +1422,13 @@
                         <form>
                            <div class="form-row">
                            <div class="form-group col-md-4">
-                             <input type="text" class="form-control" id="inputModel" placeholder="Model">
+                             <input type="text" class="form-control" id="inputModel" placeholder="manufacturer">
                             </div>
                            <div class="form-group col-md-4">
-                             <input type="number" class="form-control" id="inputModel" placeholder="Cabin Min, Berths:">
+                            <input type="text" class="form-control" id="inputModel" placeholder="Model">
                             </div>
                             <div class="form-group col-md-4">
-                             <input type="number" class="form-control" id="inputYear" placeholder="Min. Berths:">
+                             <input type="number" class="form-control" id="inputYear" placeholder="year of manufacturing">
                             </div>
                           </div><!-- form row -->
                         </form>
@@ -1432,27 +1438,40 @@
                         <form>
                            <div class="form-row">
                             <div class="form-group col-md-4">
-                             <input type="text" class="form-control" id="inputModel" placeholder="Max. Price">
+                             <select id="inputState" class="form-control" style="cursor: pointer;">
+                            <option selected> Owner Type</option>
+                            <option>Professionals</option>
+                            <option>Private</option>
+                            <option>Professionals or Private</option>
+                          </select>
+                            </div>
+                           <div class="form-group col-md-4">
+                              <input type="number" class="form-control" id="inputYear" placeholder="Cabin Min. Berths:">
+                            </div>
+                            <div class="form-group col-md-4">
+                             <input type="number" class="form-control" id="inputYear" placeholder="Min. Berths :">
+                            </div>
+                          </div><!-- form row -->
+                        </form>
+                      </div>
+                      <!-- end -->
+                      <div class="filter-wrap">
+                        <form>
+                           <div class="form-row">
+                            <div class="form-group col-md-4">
+                            <label>Filter based on max.rates</label>
                             </div>
                            <div class="form-group col-md-4">
                               <select id="inputState" class="form-control" style="cursor: pointer;">
-                            <option selected> Condition</option>
-                            <option>Operational</option>
-                            <option>Needs few repairing</option>
-                            <option>Needs few spare part replacement</option>
-                            <option>Needs total restoration</option>
-                            <option>others</option>
-                            
+                            <option selected>Please select</option>
+                            <option>Max Price Per Hour</option>
+                             <option>Max Price Per Week</option>
+                            <option>Max Price Per Day</option>
+                            <option>Max Price Per Person</option>
                           </select>
                             </div>
                             <div class="form-group col-md-4">
-                             <select id="inputState" class="form-control" style="cursor: pointer;">
-                            <option selected> Operator Option</option>
-                            <option>I am a Skipper/Captain myself</option>
-                            <option>The Skipper/Captain is available</option>
-                            <option>The Skipper/Captain is not available</option>
-                            <option>others</option>
-                          </select>
+                             <input type="number" class="form-control" id="inputYear" placeholder="$">
                             </div>
                           </div><!-- form row -->
                         </form>
