@@ -27,6 +27,19 @@ body {
 	font-size: 40px;
 }
 
+/*search list page*/
+.icons-tabs1 {
+	background-color: #3498db!important;
+	color: #fff;
+}
+.icons-tabs2 {
+	background-color: #3498db!important;
+	color: #fff;
+}
+.icons-tabs3 {
+	background-color: #3498db!important;
+	color: #fff;
+}
 /*------START NAVIGATION SECTION-------*/
 /*------START NAVIGATION SECTION-------*/
 /*------START NAVIGATION SECTION-------*/
@@ -1159,6 +1172,12 @@ margin-top: -430px;
 		font-size: 11px;
 	}
 }
+@media(max-width: 576px){
+#our-photo .modal img {
+	width: 50px;
+
+}
+}
 /*Owner's Perspective*/
 /*Owner's Perspective*/
 
@@ -1926,13 +1945,16 @@ background-color: #3498db;
 	border-bottom: 1px solid #CBCBCC;padding-top: 5px;
 	padding-bottom: 15px;
 	padding-top: 15px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 #yachit-reg-wraper .panel-body p{
 	font-size: 12px !important;
 }
 #yachit-reg-wraper .panel-title a:after {
     font-family:Fontawesome;
-    content:'\f068';
+    
+    content:'\f067';
     float:right;
     font-size:20px;
     font-weight:300;
@@ -1940,7 +1962,7 @@ background-color: #3498db;
 }
 #yachit-reg-wraper .panel-title a.collapsed:after {
     font-family:Fontawesome;
-    content:'\f067';
+    content:'\f068';
     padding-right: 20px;
     
 }
@@ -1955,9 +1977,12 @@ background-color: #3498db;
 	border-color: #3498db;
 	font-weight: 500;
 	box-shadow: unset;
-	font-size: 17px;
+	font-size: 20px;
 	padding-left: 50px;
 	padding-right: 50px;
+	padding: 10px;
+	width: 230px;
+	text-transform: uppercase;
 	
 }
 .reg-btn .btn:hover {
@@ -2019,7 +2044,7 @@ background-color: #3498db;
 	width: 40px;
 }
 #login-wrapper label {
-	font-size: 12px;
+	font-size: 11px;
 	text-align: left;
 }
 #login-wrapper .form-check {
@@ -2386,9 +2411,12 @@ background-color: #3498db;
 
 #map-tab-wrapper .nav-link {
 	font-weight: 500;
-	width: 210px;
 	text-align: center;
 }
+#map-tab-wrapper .ch {
+	width: 26%;
+}
+
 #map-tab-wrapper .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #3498db;
@@ -2508,7 +2536,6 @@ background-color: #3498db;
 }
 #map-tab-wrapper .nav-link {
 	font-weight: 500;
-	width: auto;
 	text-align: center;
 }
 
@@ -2574,8 +2601,9 @@ background-color: #3498db;
 #map-tab-wrapper h6 {
 	font-size: 13px;
 }
+
 #map-tab-wrapper .p-graph {
-	background-color: #3498db;
+	background-color: #1e3665;
 	color: #fff;
 	padding-top: 45px;
 	padding-bottom: 20px;
@@ -2604,8 +2632,11 @@ background-color: #3498db;
 }
 #map-tab-wrapper .nav-link {
 	font-weight: 300;
-	margin-left: 15px;
 	margin-top: 15px;
+}
+#map-tab-wrapper .ch {
+	margin-left: 16px;
+	width: auto;
 }
 #map-tab-wrapper .search-tabs-wrap h6{
 	padding-left: 30px;
@@ -2619,10 +2650,13 @@ background-color: #3498db;
 .clear-flter {
 	margin-left: -15px;
 }
+#map-tab-wrapper{
+	overflow: hidden;
+}
 #map-tab-wrapper .nav-link {
 	font-weight: 300;
 	font-size: 13px;
-	margin-left: 15px;
+	/*margin-left: 15px;*/
 	margin-top: 15px;
 }
 #map-tab-wrapper  p {
@@ -2630,8 +2664,17 @@ background-color: #3498db;
 }
 #map-tab-wrapper .clear-flter{
 	text-align: left;
-
 }
+#map-tab-wrapper .col-md-4 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#map-tab-wrapper .col-md-6 {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
 }
 /*---------START LISTINGS PAGE----------*/
 /*---------START LISTINGS PAGE----------*/
@@ -2868,19 +2911,37 @@ background-color: #3498db;
 	}
 
 }
+@media(max-width: 576px){
+	
+	#contact-owner label {
+		margin-top: -20px;
+	}
+}
+.modal {
+    margin-top: 30px;
+     padding-right: unset!important; 
+}
+.modal-header {
+	padding-top: 0px;
+	padding-bottom: 0;
+}
+.modal-header h5{
+	padding-top: 0px;
+	padding-bottom: 0;
+}
 /*small devece form*/
 /*small devece form*/
 /*small devece form*/
 #contact-owner .owner-btn {
 	text-align: center;
-	background-color: #1899cd;
+	background-color: #1e3665;
 	width: 100%;
 	height: auto;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 999999999;
+	z-index: 9;
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
@@ -2908,6 +2969,7 @@ background-color: #3498db;
 #contact-owner .modal-body {
 	z-index: 9999999999;
 	position: relative;
+	
 }
 #contact-owner .nav-link {
 	/*background-color: #1899cd;*/

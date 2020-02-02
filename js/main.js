@@ -1,3 +1,93 @@
+$(document).ready(function(){
+  $("#pills-charter-icons-tab").click(function(){
+    $("#pills-charter-tab").addClass("icons-tabs1");
+  });
+});
+$(document).ready(function(){
+  $("#pills-join-tab").click(function(){
+    $("#pills-charter-tab").removeClass("icons-tabs1");
+  });
+});
+$(document).ready(function(){
+  $("#pills-join-icons-tab").click(function(){
+    $("#pills-join-tab").addClass("icons-tabs2");
+   
+  });
+});
+$(document).ready(function(){
+  $("#pills-charter-tab").click(function(){
+    $("#pills-join-tab").removeClass("icons-tabs2");
+   
+  });
+});
+$(document).ready(function(){
+  $("#pills-charter-icons-tab").click(function(){
+    $("#pills-join-tab").removeClass("icons-tabs2");
+   
+  });
+});
+// buy boat
+$(document).ready(function(){
+  $("#pills-buy-icons-tab").click(function(){
+    $("#pills-buy-tab").addClass("icons-tabs3");
+   
+  });
+});
+$(document).ready(function(){
+  $("#pills-charter-tab").click(function(){
+    $("#pills-buy-tab").removeClass("icons-tabs3");
+  });
+});
+$(document).ready(function(){
+  $("#pills-buy-tab").click(function(){
+    $("#pills-charter-tab").removeClass("icons-tabs3");
+  });
+});
+$(document).ready(function(){
+  $("#pills-buy-tab").click(function(){
+    $("#pills-join-tab").removeClass("icons-tabs2");
+  });
+});
+$(document).ready(function(){
+  $("#pills-join-tab").click(function(){
+    $("#pills-buy-tab").removeClass("icons-tabs3");
+  });
+});
+$(document).ready(function(){
+  $("#pills-join-icons-tab").click(function(){
+    $("#pills-buy-tab").removeClass("icons-tabs3");
+  });
+});
+
+$(document).ready(function(){
+  $("#pills-charter-icons-tab").click(function(){
+    $("#pills-buy-tab").removeClass("icons-tabs3");
+  });
+});
+$(document).ready(function(){
+  $("#pills-join-icons-tab").click(function(){
+    $("#pills-charter-tab").removeClass("icons-tabs1");
+  });
+});
+
+$(document).ready(function(){
+  $("#pills-buy-icons-tab").click(function(){
+    $("#pills-join-tab").removeClass("icons-tabs2");
+  });
+});
+$(document).ready(function(){
+  $("#pills-buy-icons-tab").click(function(){
+    $("#pills-charter-tab").removeClass("icons-tabs1");
+  });
+});
+$(document).ready(function(){
+  $("#pills-buy-tab").click(function(){
+    $("#pills-charter-tab").removeClass("icons-tabs1");
+  });
+});
+
+
+
 
 
 $('.ashok').owlCarousel({
@@ -409,19 +499,18 @@ $(document).ready(function(){
 $(function() { // document ready
     if ($('#sticky-map').length) { // make sure "#sticky-map" element exists
         var el = $('#sticky-map');
-        var stickyTop = $('#sticky-map').offset().top; // returns number
+        var stickyTop = $('#sticky-map').offset().top // returns number
         var stickyHeight = $('#sticky-map').height();
 
         $(window).scroll(function() { // scroll event
-            var limit = $('#footer-wrapper').offset().top - stickyHeight - 0;
+            var limit = $('#footer-wrapper').offset().top - stickyHeight - 50;
 
             var windowTop = $(window).scrollTop(); // returns number
 
             if (stickyTop < windowTop) {
                 el.css({
                     position: 'fixed',
-                    top: 60
-
+                    top: 50
                 });
             } else {
                 el.css('position', 'static');
@@ -498,5 +587,5 @@ $(function() { // document ready
 
 
  // SEARCH  FILTER
-
+ 
  
