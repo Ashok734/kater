@@ -1,8 +1,14 @@
 $(document).ready(function(){
   $("#pills-charter-icons-tab").click(function(){
     $("#pills-charter-tab").addClass("icons-tabs1");
+    // $('.private-filter').css({'display':'none'});
+    
   });
 });
+// click
+
+// click
+
 $(document).ready(function(){
   $("#pills-join-tab").click(function(){
     $("#pills-charter-tab").removeClass("icons-tabs1");
@@ -90,7 +96,7 @@ $(document).ready(function(){
 
 
 
-$('.ashok').owlCarousel({
+$('.main-slider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -123,7 +129,7 @@ $(window).on('scroll',function(){
 
 
 
-$('.suraz').owlCarousel({
+$('.testimonial-slide').owlCarousel({
     autoplayHoverPause:true,
     loop:true,
     margin:10,
@@ -146,7 +152,7 @@ $('.suraz').owlCarousel({
 
 
 
-$('.anil').owlCarousel({
+$('.yachit-slider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
