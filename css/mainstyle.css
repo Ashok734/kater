@@ -2586,17 +2586,17 @@ background-color: #3498db;
 	padding: 0;
 	background-color: unset;
 	border-top: unset;
-	color: #4B4B4C;
+	color:#3498db;
 	border-left: unset;
 	border-right: unset;
 	box-shadow: unset;
 	border-radius: 0;
-	border-color: #4B4B4C;
+	border-color: #3498db;
 	font-weight: 500;
 }
 #map-tab-wrapper .advance-search .btn:hover {
-	color: #1899cd;
-	border-color:#1899cd;
+	color: #1e3665;
+	border-color:#1e3665;
 }
 #map-tab-wrapper .filter-wrap .form-control {
 	border:1px solid #ced4da;
