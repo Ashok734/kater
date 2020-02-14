@@ -236,6 +236,7 @@ nav.black {
 	font-size: 25px;
     transition: 0.6s;
 }
+
 .header-main {
 	width: calc(100% - 50px);
 	padding: 5px 36px;
@@ -1823,6 +1824,10 @@ right:30px;
 	background: none;
 	border-radius: 0;
 }
+.header-tabs nav > div a.nav-item.nav-link:hover {
+	color: #1899cd;
+}
+
 @media(max-width: 992px){
 	.header-tabs nav > div a.nav-item.nav-link, nav > div a.nav-item.nav-link.active {
 		margin-top: 20px;
@@ -2422,7 +2427,6 @@ font-weight: 600;
 .chart-box-wrap .modal-header{
 	background-color: #f6f6f6;
 	text-align: center!important;
-
 	padding-top: 30px;
 }
 
@@ -2431,7 +2435,11 @@ font-weight: 600;
 	padding-left: 25%;
 	font-size: 14px;
 }
+.chart-box-wrap .modal-content h2{
+	font-size: 11px;
+	text-align: center;
 
+}
 .chart-box-wrap li {
 	list-style: none;
 	font-size: 13px;
